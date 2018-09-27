@@ -74,6 +74,7 @@ header{
 	position: fixed;
 	background-image: url(bg.jpg);
 	background-size: cover;
+	background-position: center;
 	height: 100%;
 	width: 100%;
 }
