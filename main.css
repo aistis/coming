@@ -77,7 +77,7 @@ header{
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-	height: 100%;
+	/*height: 100%;*/
 	width: 100%;
 }
 
@@ -183,9 +183,15 @@ textarea:focus::placeholder{
  ****Mouse****
  *************/
 
-.mouse{
-	margin-left: calc( 50% - 20px);
+.mouse-house{
+	height: 40px;
+	width: 140px;
+	margin-left: calc( 50% - 70px);
 	margin-bottom: 40px;
+}
+
+.mouse{
+	display: inline-block;
 	height: 60px;
 	width: 40px;
 	border: 2px solid white;
@@ -197,6 +203,41 @@ textarea:focus::placeholder{
 	height: 6px;
 	width: 3px;
 	background-color: white;
+}
+
+.fa-bolt{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.mouse-house >.fa-bolt:first-child{
+	transform: rotate();
+}
+
+/***********************
+ ****Mouse ANIMATION****
+ ***********************/
+
+.wheel {
+  animation-duration: 2s;
+  animation-name: scroll;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes scroll {
+	0% {
+  	margin-top: 0px;
+	}
+
+	50% {
+  	margin-top: 20px;
+  	height: 14px;
+	}
+
+	100% {
+  	margin-top: 0px;
+	}
 }
 
 /***********************************************
